@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qqlivetv.widget.percent.PercentFrameLayout android:layout_gravity="center" android:id="@id/bg_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:percent="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:layout_gravity="right" android:id="@id/sufaceView" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <com.tencent.qqlivetv.widget.percent.PercentFrameLayout android:id="@id/sport_team_detail_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.tencent.qqlivetv.model.sports.SportTeamDetailInfoView android:id="@id/sport_team_detail_infoview" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:layout_heightPercent="14.81%" custom:layout_marginLeftPercent="5.21%" custom:layout_marginTopPercent="12.96%" custom:layout_marginRightPercent="2%" custom:layout_marginBottomPercent="3%" />
+            <com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:orientation="vertical" android:id="@id/list_match_video_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" custom:layout_heightPercent="75%">
+                <TextView android:textColor="#fffefefe" android:id="@id/match_coll_pos_text" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:layout_marginLeftPercent="5.21%" custom:layout_textSizePercent="3.9%" />
+                <com.tencent.qqlivetv.widget.sports.HorizontalGridView android:id="@id/sport_team_detail_recyclerview" android:focusable="true" android:scrollbars="none" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:layout_paddingTopPercent="0.6%" custom:layout_paddingBottomPercent="1%" custom:layout_paddingLeftPercent="2.8%" custom:layout_paddingRightPercent="1%" custom:horizontalMarginPercent="-0.035" custom:verticalMarginPercent="-0.055" custom:rowsHeight="wrap_content" custom:numberOfRows="2" />
+            </com.tencent.qqlivetv.widget.percent.PercentLinearLayout>
+        </com.tencent.qqlivetv.widget.percent.PercentLinearLayout>
+        <TextView android:textColor="#4bfefefe" android:layout_gravity="bottom|center" android:id="@id/text_nodata" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_team_detail_nodata" android:drawableTop="@drawable/icon_nodata" android:drawablePadding="@dimen/layout_match_collection_text_marginTop" custom:layout_marginBottomPercent="20%" custom:layout_textSizePercent="5%" />
+    </com.tencent.qqlivetv.widget.percent.PercentFrameLayout>
+    <com.tencent.qqlivetv.widget.percent.PercentFrameLayout android:id="@id/sport_team_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDuration="800" style="@style/loading_progress_circle" />
+    </com.tencent.qqlivetv.widget.percent.PercentFrameLayout>
+    <com.tencent.qqlivetv.model.videoplayer.PlayerControlerView android:gravity="center" android:id="@id/player_controler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.tencent.qqlivetv.model.videoplayer.PlayerErrorView android:gravity="center" android:id="@id/player_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.tencent.qqlivetv.widget.percent.PercentFrameLayout>

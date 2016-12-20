@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/loading_video_framelayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/loading_playing_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black" />
+    <com.tencent.qqlivetv.model.videoplayer.QQVODView android:id="@id/QQVODView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center" android:id="@id/samll_window_loading_progress_layout" android:background="@color/player_overlayer_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/small_window_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" style="@style/small_window_loading_progress_bar" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/small_window_progress_bar">
+            <View android:id="@id/loading_center_view" android:layout_width="@dimen/video_player_loading_center_view_width" android:layout_height="@dimen/video_player_loading_center_view_height" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/samll_window_show_tips_bottom_size" android:textColor="@color/white80" android:id="@id/small_window_loading_network_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_player_loading_prepare" android:layout_toLeftOf="@id/loading_center_view" />
+            <TextView android:textSize="@dimen/samll_window_show_tips_bottom_size" android:textColor="@color/white80" android:id="@id/small_window_loading_network" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_player_loading_network" android:layout_toRightOf="@id/loading_center_view" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_video_prepare_layout" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon_video_player_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_player_loading" android:contentDescription="@null" />
+            <ImageView android:id="@id/icon_video_player_loading_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_player_loading_default" android:contentDescription="@null" />
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/loading_center_view_network" android:layout_width="@dimen/video_player_loading_center_view_width" android:layout_height="@dimen/video_player_loading_center_view_height" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/video_player_loading_network_text_size" android:textColor="@color/white" android:id="@id/loading_video_player_loading_network_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_player_loading_prepare" android:layout_toLeftOf="@id/loading_center_view_network" />
+            <TextView android:textSize="@dimen/video_player_loading_network_text_size" android:textColor="@color/white" android:id="@id/loading_video_player_loading_network" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_player_loading_network" android:layout_toRightOf="@id/loading_center_view_network" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/loading_video_prepare_loading_image_layout" android:background="@drawable/bg_video_player_blue_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/video_prepare_loading_image_layout_margint_top">
+            <ImageView android:id="@id/loading_video_prepare_loading_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_video_player_white_bar" android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/video_prepare_title_text_size" android:textColor="@color/live_notify_dialog_dark_gray" android:ellipsize="end" android:gravity="center" android:id="@id/loading_video_prepare_title_text" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/video_prepare_title_text_margint_top" android:lines="1" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/samll_window_show_tips_top_layout" android:background="@drawable/small_view_top_layout_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/samll_window_show_tips_top_layout_height">
+        <TextView android:textSize="@dimen/samll_window_show_tips_top_size" android:textColor="@color/white50" android:id="@id/samll_window_show_tips_top" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/samll_window_top_tips_margin_left" android:layout_marginTop="@dimen/samll_window_top_tips_margin_top" android:text="@string/samll_window_show_tips_top_string" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/samll_window_show_tips_bottom_layout" android:background="@drawable/small_view_bottom_layout_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/samll_window_show_tips_top_layout_height">
+        <TextView android:textSize="@dimen/samll_window_show_tips_bottom_size" android:textColor="@color/white" android:ellipsize="end" android:id="@id/samll_window_show_tips_bottom" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/samll_window_top_tips_margin_left" android:layout_marginBottom="@dimen/samll_window_top_tips_margin_top" android:text="" android:lines="1" android:maxLength="22" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.tencent.qqlivetv.model.videoplayer.PlayerErrorView android:gravity="center" android:id="@id/player_error_view" android:background="@drawable/bg_vedio_comm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

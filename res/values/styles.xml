@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="msg_lib_live_dialog_translucent">
+        <item name="android:windowBackground">@color/msg_lib_live_dialog_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/back_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/back_exit</item>
+    </style>
+    <style name="UpgradeAnimation" parent="@android:style/Animation.Toast">
+        <item name="android:activityCloseEnterAnimation">@anim/upgrade_exit</item>
+    </style>
+    <style name="launcherThemeApp" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowActionBar">true</item>
+    </style>
+    <style name="windowManager">
+        <item name="android:windowEnterAnimation">@anim/translate_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_out</item>
+    </style>
+    <style name="SAOTheme" parent="@android:style/Theme.Wallpaper">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="TextCountFocus">
+        <item name="android:textSize">@dimen/statusbar_count_focus_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/msg_dot4</item>
+        <item name="android:paddingLeft">1.0px</item>
+        <item name="android:focusable">false</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_marginLeft">@dimen/statusbar_count_focus_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/statusbar_count_focus_margin_top</item>
+        <item name="android:alpha">1.0</item>
+    </style>
+    <style name="TextCountUnFocus">
+        <item name="android:textSize">@dimen/statusbar_count_unfocus_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/msg_dot4</item>
+        <item name="android:paddingLeft">1.0px</item>
+        <item name="android:focusable">false</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_marginLeft">@dimen/statusbar_count_un_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/statusbar_count_un_margin_top</item>
+        <item name="android:alpha">1.0</item>
+    </style>
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="video_player_loading_progress_bar">
+        <item name="android:maxWidth">23.0dip</item>
+        <item name="android:maxHeight">23.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/bg_video_progress_bar_layout</item>
+        <item name="android:minWidth">23.0dip</item>
+        <item name="android:minHeight">23.0dip</item>
+    </style>
+    <style name="video_webview_loading_progress_bar">
+        <item name="android:maxWidth">23.0dip</item>
+        <item name="android:maxHeight">23.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/bg_video_progress_bar_layout</item>
+        <item name="android:minWidth">23.0dip</item>
+        <item name="android:minHeight">23.0dip</item>
+    </style>
+    <style name="Theme" parent="@android:style/Theme" />
+    <style name="AnimationFade">
+        <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
+    </style>
+    <style name="loading_progress_circle">
+        <item name="android:indeterminateDrawable">@drawable/match_collection_loading</item>
+    </style>
+    <style name="AppStartTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/app_start_background</item>
+    </style>
+    <style name="detail_main_title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">-9.329987dip</item>
+        <item name="android:layout_marginBottom">23.329987dip</item>
+        <item name="android:maxWidth">533.3281dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="detail_main_subtitle">
+        <item name="android:textSize">33.329987dip</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="detail_title_text">
+        <item name="android:textSize">21.329987dip</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="detail_title_value" parent="@style/detail_title_text">
+        <item name="android:layout_marginLeft">0.0dip</item>
+    </style>
+    <style name="detail_title_brief_text" parent="@style/detail_title_text">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="small_window_loading_progress_bar">
+        <item name="android:maxWidth">60.0dip</item>
+        <item name="android:maxHeight">60.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/bg_video_progress_bar_layout</item>
+        <item name="android:minWidth">60.0dip</item>
+        <item name="android:minHeight">60.0dip</item>
+    </style>
+    <style name="commonButtonStyle">
+        <item name="android:textSize">@dimen/detail_header_paly_btn_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/detail_common_button_bg</item>
+        <item name="android:paddingLeft">@dimen/detail_common_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/detail_common_btn_padding_right</item>
+        <item name="android:focusable">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginLeft">@dimen/detail_common_btn_margin_left</item>
+        <item name="android:height">@dimen/detail_common_btn_height</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="OpenActivityStyle">
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="MainActivityStyle" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@drawable/img_welcome</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/QQLiveAnimation.Activity</item>
+    </style>
+    <style name="QQLiveTVActivityStyle" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="QQLiveAnimation.Activity" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+    <style name="DialogFullScreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="MyStarRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">30.0dip</item>
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">20.0dip</item>
+    </style>
+    <style name="PlayerDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="live_dialog_translucent">
+        <item name="android:windowBackground">@color/live_notify_dialog_live_dialog_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="tv_h5_dialog_transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

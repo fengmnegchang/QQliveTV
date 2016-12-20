@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_vod_menu_tips" android:paddingLeft="@dimen/vod_menu_tips_text_bg_padding_left" android:paddingRight="@dimen/vod_menu_tips_text_bg_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/vod_menu_tips_text_size" android:textColor="@color/white" android:id="@id/vod_menu_tips_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vod_menu_tips_press" />
+    <TextView android:textSize="@dimen/vod_menu_tips_text_size" android:textColor="@color/white" android:id="@id/vod_menu_tips_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vod_menu_tips_menu_margin_left" android:layout_marginRight="@dimen/vod_menu_tips_menu_margin_right" android:text="@string/vod_menu_tips_menu" />
+    <TextView android:textSize="@dimen/vod_menu_tips_text_size" android:textColor="@color/white" android:id="@id/vod_menu_tips_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vod_menu_tips_select" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content_view" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqlivetv.model.videoplayer.QQVODView android:id="@id/animation_video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/video_prepare_layout" android:background="@android:color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon_video_player_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_player_loading" android:contentDescription="@null" />
+            <ImageView android:id="@id/icon_video_player_loading_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_player_loading_default" android:contentDescription="@null" />
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/center_view" android:layout_width="@dimen/video_player_loading_center_view_width" android:layout_height="@dimen/video_player_loading_center_view_height" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/video_player_loading_network_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_player_loading_prepare" android:layout_toLeftOf="@id/center_view" />
+            <TextView android:textSize="@dimen/video_player_loading_network_text_size" android:textColor="@color/white" android:id="@id/video_player_loading_network" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_player_loading_network" android:layout_toRightOf="@id/center_view" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/video_prepare_loading_image_layout" android:background="@drawable/bg_video_player_blue_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/video_prepare_loading_image_layout_margint_top">
+            <ImageView android:id="@id/video_prepare_loading_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_video_player_white_bar" android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/video_prepare_title_text_size" android:textColor="@color/live_notify_dialog_dark_gray" android:layout_gravity="center_horizontal" android:id="@id/video_prepare_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/video_prepare_title_text_margint_top" />
+    </LinearLayout>
+    <com.tencent.qqlivetv.model.videoplayer.PlayerErrorView android:gravity="center" android:id="@id/player_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#cc000000" android:paddingTop="@dimen/rotate_player_menu_margin_top" android:paddingBottom="@dimen/rotate_player_menu_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/definition_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="@dimen/rotate_player_menu_text_width" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/rotate_player_30sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rotate_player_defination" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.tencent.qqlivetv.model.rotateplayer.RotatePlayerMenuBaseView android:id="@id/definition_menu_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_channelId_margin_left" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/default_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rotate_player_channelId_margin_left">
+        <RelativeLayout android:layout_width="@dimen/rotate_player_menu_text_width" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/rotate_player_30sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_menu_default_margin_left" android:text="@string/rotate_player_default_set" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.tencent.qqlivetv.model.rotateplayer.RotatePlayerMenuBaseView android:id="@id/default_menu_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_channelId_margin_left" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/video_detail_Layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rotate_player_channelId_margin_left">
+        <RelativeLayout android:layout_width="@dimen/rotate_player_menu_text_width" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/rotate_player_30sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_menu_default_margin_left" android:text="@string/rotate_player_look_video_detail" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.tencent.qqlivetv.model.rotateplayer.RotatePlayerMenuBaseView android:id="@id/video_detail_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_channelId_margin_left" />
+    </LinearLayout>
+</LinearLayout>

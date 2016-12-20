@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/framelayout_match_main_tcl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/rl_playerview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_play_icon" android:background="@drawable/icon_video_pause_play" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <TextView android:textSize="24.0sp" android:textColor="#4bfefefe" android:gravity="center" android:id="@id/tv_vip_tips" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_match_collection_text_marginTop" android:text="@string/tips_matchcollections_nodata" android:layout_below="@id/iv_play_icon" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="24.0sp" android:textColor="#4bfefefe" android:layout_gravity="center" android:id="@id/text_nodata" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_matchcollections_nodata" />
+    <com.tencent.qqlivetv.model.videoplayer.PlayerControlerView android:gravity="center" android:id="@id/player_controler_view_tcl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.tencent.qqlivetv.model.videoplayer.PlayerErrorView android:gravity="center" android:id="@id/player_error_view_tcl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/msg_lib_live_dialog_bk" android:layout_width="490.0dip" android:layout_height="310.0dip">
+        <com.ktcp.msg.lib.page.MsgLibTextView android:textSize="28.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/msg_lib_live_msg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="53.0dip" android:layout_marginTop="53.0dip" android:layout_marginRight="53.0dip" android:layout_marginBottom="20.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:textSize="25.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/msg_lib_live_msg_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="27.0dip" android:singleLine="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="86.0dip">
+            <Button android:textSize="24.0sp" android:textColor="#fffefefe" android:gravity="center" android:id="@id/msg_lib_live_btn_ok" android:background="@drawable/msg_lib_btn_selector" android:layout_width="180.0dip" android:layout_height="54.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:text="确定" />
+            <Button android:textSize="24.0sp" android:textColor="#fffefefe" android:gravity="center" android:id="@id/msg_lib_live_btn_cancel" android:background="@drawable/msg_lib_btn_selector" android:layout_width="180.0dip" android:layout_height="54.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

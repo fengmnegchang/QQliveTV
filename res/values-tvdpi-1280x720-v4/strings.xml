@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timeline_shadow_height_percent">50.8%</string>
+    <string name="timeline_shadow_width_percent">44.5%</string>
+    <string name="timeline_shadow_marginLeft_percent">2.8%</string>
+    <string name="timeline_shadow_marginTop_percent">5.6%</string>
+    <string name="selectandsee_shadow_height_percent">58.4%</string>
+    <string name="selectandsee_shadow_width_percent">51.7%</string>
+    <string name="selectandsee_shadow_marginLeft_percent">3.30%</string>
+    <string name="selectandsee_shadow_marginTop_percent">12.4%</string>
+    <string name="movie_coming_shadow_height_percent">59.5%</string>
+    <string name="movie_coming_shadow_width_percent">53.25%</string>
+    <string name="movie_coming_shadow_marginLeft_percent">2.50%</string>
+    <string name="movie_coming_shadow_marginTop_percent">8.9%</string>
+</resources>

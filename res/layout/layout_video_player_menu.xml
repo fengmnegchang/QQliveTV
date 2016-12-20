@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/menu_root" android:background="@drawable/player_menu_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqlivetv.model.episode.EpisodeHListChooserView android:id="@id/episode_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/definition_menu_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_menu_margin_left" android:layout_marginTop="@dimen/player_menu_definition_top" android:layout_marginRight="@dimen/player_menu_margin_right" android:layout_below="@id/episode_menu">
+        <com.tencent.qqlivetv.model.videoplayer.DefinitionViewText android:id="@id/definition_menu" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/player_menu_definition_top" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/video_player_menu_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_trailer" android:background="@drawable/trailer_see_total_btn_selector" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/trailer_btn_width" android:layout_height="@dimen/trailer_btn_height" android:text="@string/player_menu_see_total_video" />
+    </LinearLayout>
+    <com.tencent.qqlivetv.model.videoplayer.ProportionViewText android:id="@id/proportion_menu" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_menu_margin_left" android:layout_marginRight="@dimen/player_menu_margin_right" android:layout_below="@id/definition_menu_rv" />
+    <com.tencent.qqlivetv.model.videoplayer.CircleModeViewText android:id="@id/playback_menu" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_menu_margin_left" android:layout_marginRight="@dimen/player_menu_margin_right" android:layout_below="@id/proportion_menu" />
+    <TextView android:gravity="center" android:id="@id/login_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/player_menu_definition_uhd_unsupport" />
+    <ImageView android:id="@id/login_tips_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

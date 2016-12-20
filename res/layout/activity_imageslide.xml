@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqlivetv.model.imageslide.JazzyViewPager android:id="@id/viewPager" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|left" android:id="@id/loacl_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:src="@drawable/loacl_back" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/loacl_before" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="45.0dip" android:src="@drawable/loacl_before" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/menu_layout" android:background="#e31d1d1d" android:focusable="true" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/slide_layout" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/loack_view_slide" android:nextFocusRight="@id/loack_view_left" android:nextFocusUp="@id/viewPager" android:nextFocusDown="@id/viewPager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loack_view_slide" />
+            <TextView android:textSize="10.0dip" android:textColor="@drawable/color_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/menu_slide_desc" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/left_layout" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip">
+            <ImageView android:id="@id/loack_view_left" android:nextFocusLeft="@id/loack_view_slide" android:nextFocusRight="@id/loack_view_right" android:nextFocusUp="@id/viewPager" android:nextFocusDown="@id/viewPager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loack_view_left" />
+            <TextView android:textSize="10.0dip" android:textColor="@drawable/color_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/menu_rotate_left_desc" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/right_layout" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip">
+            <ImageView android:id="@id/loack_view_right" android:nextFocusLeft="@id/loack_view_left" android:nextFocusUp="@id/viewPager" android:nextFocusDown="@id/viewPager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loack_view_right" />
+            <TextView android:textSize="10.0dip" android:textColor="@drawable/color_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/menu_rotate_right_desc" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="msg_list_white">#ffffffff</item>
+    <item type="drawable" name="msg_list_gray">#ff636363</item>
+    <item type="drawable" name="msg_list_bg_color">#ff000000</item>
+    <item type="drawable" name="msg_list_transparent">#00000000</item>
+    <item type="drawable" name="trans">#00000000</item>
+    <item type="drawable" name="bg">#ff031526</item>
+    <item type="drawable" name="transparent">#00000000</item>
+    <item type="drawable" name="upgrade_hint_bg">#ff1c1c1f</item>
+    <item type="drawable" name="channel_item_mask">#33000000</item>
+    <item type="drawable" name="userinfo_setting_bg">#b63a3a3a</item>
+    <item type="drawable" name="transparent_5">#0effffff</item>
+    <item type="drawable" name="transparent_5_chiq">#ff575757</item>
+    <item type="drawable" name="btn_focus_chiq">#ffd31a52</item>
+    <item type="drawable" name="transparent_6">#0fffffff</item>
+    <item type="drawable" name="transparent_10">#19ffffff</item>
+    <item type="drawable" name="transparent_15">#26ffffff</item>
+    <item type="drawable" name="transparent_50">#7f000000</item>
+    <item type="drawable" name="transparent_60">#99000000</item>
+    <item type="drawable" name="transparent_80">#bb000000</item>
+    <item type="drawable" name="black_transparent_90">#e6000000</item>
+    <item type="drawable" name="transparent_90">#1affffff</item>
+</resources>

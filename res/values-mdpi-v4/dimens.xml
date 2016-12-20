@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="msg_tips_view_width">202.66998dip</dimen>
+    <dimen name="msg_tips_view_height">240.0dip</dimen>
+    <dimen name="msg_tips_image_width">106.66998dip</dimen>
+    <dimen name="msg_tips_image_height">149.32999dip</dimen>
+    <dimen name="msg_tips_image_marginLeft">33.329987dip</dimen>
+    <dimen name="msg_tips_image_marginTop">33.329987dip</dimen>
+    <dimen name="msg_tips_title_textSize">21.0sp</dimen>
+    <dimen name="msg_tips_notice_textSize">14.669983sp</dimen>
+    <dimen name="msg_tips_text_layout_height">186.66998dip</dimen>
+    <dimen name="msg_tips_text_layout_marginLeft">146.66998dip</dimen>
+    <dimen name="msg_tips_text_layout_marginTop">40.0dip</dimen>
+    <dimen name="msg_tips_text_paddingLeft">37.329987dip</dimen>
+    <dimen name="msg_tips_text_circle_width">85.32999dip</dimen>
+    <dimen name="msg_tips_text_maxWidth">320.0dip</dimen>
+</resources>

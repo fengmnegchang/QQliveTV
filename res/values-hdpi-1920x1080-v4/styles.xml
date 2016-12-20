@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="video_player_loading_progress_bar">
+        <item name="android:maxWidth">23.0dip</item>
+        <item name="android:maxHeight">23.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/bg_video_progress_bar_layout_comm</item>
+        <item name="android:minWidth">23.0dip</item>
+        <item name="android:minHeight">23.0dip</item>
+    </style>
+    <style name="detail_main_title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">-9.329987dip</item>
+        <item name="android:layout_marginBottom">23.329987dip</item>
+        <item name="android:maxWidth">533.3281dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="detail_main_subtitle">
+        <item name="android:textSize">33.329987dip</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="detail_title_text">
+        <item name="android:textSize">21.329987dip</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="detail_title_value" parent="@style/detail_title_text">
+        <item name="android:layout_marginLeft">0.0dip</item>
+    </style>
+    <style name="detail_title_brief_text" parent="@style/detail_title_text">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="commonButtonStyle">
+        <item name="android:textSize">@dimen/detail_header_paly_btn_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/detail_common_button_bg</item>
+        <item name="android:paddingLeft">@dimen/detail_common_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/detail_common_btn_padding_right</item>
+        <item name="android:focusable">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginLeft">@dimen/detail_common_btn_margin_left</item>
+        <item name="android:height">@dimen/detail_common_btn_height</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="OpenActivityStyle">
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="feedback_loading_progress_bar">
+        <item name="android:maxWidth">50.0dip</item>
+        <item name="android:maxHeight">50.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/feedback_progress_bar_layout</item>
+        <item name="android:minWidth">50.0dip</item>
+        <item name="android:minHeight">50.0dip</item>
+    </style>
+</resources>

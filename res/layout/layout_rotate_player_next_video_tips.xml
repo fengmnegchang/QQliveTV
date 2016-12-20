@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#cc000000" android:paddingLeft="@dimen/rotate_player_channelName_margin_left" android:paddingTop="@dimen/rotate_player_infoview_padding_top" android:paddingRight="@dimen/rotate_player_channelName_margin_left" android:paddingBottom="@dimen/rotate_player_infoview_padding_top" android:layout_width="@dimen/rotate_player_infoview_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/rotate_player_32sp" android:textColor="#fffefefe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rotate_player_video_prepare" />
+        <TextView android:textSize="@dimen/rotate_player_32sp" android:textColor="#fffefefe" android:id="@id/next_video_tips_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/rotate_player_32sp" android:textColor="#fffefefe" android:ellipsize="end" android:id="@id/next_video_tips_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_channelName_margin_left" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/rotate_player_30sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/tv_show_detail_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rotate_player_channelName_margin_left" android:text="@string/rotate_player_next_video_tips" android:singleLine="true" />
+</LinearLayout>

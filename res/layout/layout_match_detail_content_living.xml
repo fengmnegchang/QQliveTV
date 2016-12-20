@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/layout_detailContenView_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:percent="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="@dimen/layout_detailContenView_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tv_match_detail_title_marginTop">
+        <TextView android:textSize="@dimen/tv_match_detail_titleTextSize" android:textColor="@color/tv_matchDetailTitle_textColor" android:id="@id/id_tv_matchDetail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextSwitcher android:id="@id/id_ts_liveTips" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/tv_match_detail_liveTipsMarginLeft" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tv_match_detail_score_marginTop">
+        <ImageSwitcher android:id="@id/id_ts_homeSoce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/slide_in_counter" android:outAnimation="@anim/slide_out_counter" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/tv_match_detail_score_textSize" android:textStyle="bold" android:textColor="@color/tv_matchDetail_scoreTextColor" android:id="@id/id_tv_matchDetail_compare" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tv_match_detail_scoreCompare_marginH" android:layout_marginRight="@dimen/tv_match_detail_scoreCompare_marginH" android:text="@string/compare" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.tencent.qqlivetv.model.imageslide.TVImageView android:id="@id/id_iv_matchDetail_liveIcon" android:layout_width="@dimen/iv_match_detail_liveIcon_WH" android:layout_height="@dimen/iv_match_detail_liveIcon_WH" />
+            <TextView android:textSize="@dimen/tv_match_detail_titleTextSize" android:textColor="@color/tv_matchDetailTips_textColor" android:id="@id/id_tv_matchDetail_liveType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tv_match_detail_liveType_IconMargin" />
+        </LinearLayout>
+        <ImageSwitcher android:id="@id/id_ts_guestSoce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/slide_in_counter" android:outAnimation="@anim/slide_out_counter" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.tencent.qqlivetv.widget.sports.HorizontalGridView android:id="@id/sport_button_recyclerview" android:focusable="true" android:scrollbars="none" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:layout_paddingTopPercent="1.5%" custom:layout_paddingLeftPercent="14%" custom:layout_paddingRightPercent="2%" custom:horizontalMarginPercent="-0.02" custom:rowsHeight="wrap_content" custom:columnWidthPercent="0.15" />
+    </com.tencent.qqlivetv.widget.percent.PercentLinearLayout>
+</com.tencent.qqlivetv.widget.percent.PercentLinearLayout>

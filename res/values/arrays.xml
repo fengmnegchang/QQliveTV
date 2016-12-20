@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title_list">
+        <item>文件浏览</item>
+        <item>相册</item>
+        <item>音乐</item>
+        <item>视频</item>
+        <item>电视</item>
+        <item>游戏</item>
+        <item>应用</item>
+        <item>设置</item>
+    </string-array>
+    <integer-array name="color_list">
+        <item>0xCC0992A7</item>
+        <item>0xCC4577B6</item>
+        <item>0xCCB75A5A</item>
+        <item>0xCC14B763</item>
+        <item>0xCCEB7B04</item>
+        <item>0xCC0992A7</item>
+        <item>0xCC99202E</item>
+    </integer-array>
+    <string-array name="rotate_tips">
+        <item>播放时连按2次返回键可退出看电视</item>
+        <item>按左右键可换台</item>
+        <item>按菜单键可设置清晰度</item>
+        <item>在频道列表上点击视频可直接播放</item>
+    </string-array>
+</resources>

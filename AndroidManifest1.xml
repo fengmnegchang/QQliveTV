@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ktcp.video" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="com.tencent.qqmusictv.playerservice"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="com.huawei.hwid.permission.ACCESS"/>
+    <uses-permission android:name="com.huawei.appmarket.provider.readPermission"/>
+    <uses-permission android:name="com.mstar.android.permissionn.ACCESS_TV_DATA"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.ktcp.video.QQLiveApplication" android:persistent="true" android:theme="@style/AppTheme">
+        <meta-data android:name="com.tencent.rdm.uuid" android:value="e1dbd727-c92b-4369-bf73-5a5c3314005a"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ktcp.video.activity.MainActivity" android:screenOrientation="landscape" android:theme="@style/AppStartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.qqlivetv.open.splash"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.ktcp.video.QQLiveTV" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.tencent.qqlivetv.open"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tenvideo2"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.qqlivetv.open"/>
+                <action android:name="com.tv.tcl.open.detail"/>
+                <action android:name="com.tv.ktcp.sync.open.detail"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ktcp.video.activity.PlayerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ktcp.video.activity.CarouselPlayerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ktcp.video.activity.PlayerTestActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ktcp.video.activity.LivePlayerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.tencent.qqlivetv.h5.H5BrowserActivity" android:process=":webview" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.tencent.video.h5.open"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ktcp.video.activity.SelectAndSeeActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.MovieComingActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.ImageSlideActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.FeedBackNewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.ChildrenHistoryPubActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.SportMatchActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ktcp.video.activity.RotatePlayActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.SportPlayersActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.SportTeamsActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.SportTeamDetailActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.SportPlayerDetailActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.DialogActivity" android:theme="@style/Dialog">
+            <intent-filter>
+                <action android:name="com.ktcp.video.activity.dialog"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.ktcp.video.activity.EasterEggsActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.ktcp.video.activity.eastereggs"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.ktcp.video.activity.LiveNotifyDialogActivity" android:screenOrientation="landscape" android:theme="@style/live_dialog_translucent">
+            <intent-filter>
+                <action android:name="com.ktcp.video.activity.livenotifydialog"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="com.ktcp.msg.lib.page.LiveDialogActivity" android:process=":push" android:screenOrientation="landscape" android:theme="@style/msg_lib_live_dialog_translucent"/>
+        <activity android:name="com.ktcp.video.activity.ErrorPageActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.PlayerPerformanceTestingActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.ktcp.video.activity.TimeLineNewsActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation" android:exported="false" android:launchMode="singleTop" android:name="com.ktcp.video.activity.ForceUpgradeActivity" android:process=":upgrade" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.ktcp.video.activity.force_upgrade"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ktcp.video.activity.ClearSpaceActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.ktcp.video.activity.clear_space"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.tencent.qqlivetv.dynamicload.core.DLProxyActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.dynamic.load.proxy.activity.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.tencent.qqlivetv.dynamicload.core.DLProxyFragmentActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.dynamic.load.proxy.fragmentactivity.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="com.tencent.qqlivetv.model.multiscreen.MultiScreenService"/>
+        <service android:name="com.tencent.qqlivetv.model.multiscreen.MultiScreenDaemonService" android:process=":MultiScreen"/>
+        <service android:exported="false" android:name="com.tencent.qqlive.utils.log.UploadService"/>
+        <receiver android:name="com.ktcp.video.receiver.CHRestoreBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.changhong.dmt.system.boot_part1"/>
+                <category android:name="android.intent.category.Default"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.Default"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.qqlivetv.model.open.LoginStateSyncReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.qqlivetv.open.logout.sync"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ktcp.video.receiver.PushReceiver">
+            <intent-filter>
+                <action android:name="tencent_video_app_update"/>
+                <action android:name="com.android.tcl.messagebox.MessageforThird"/>
+                <action android:name="user_upload_msg"/>
+                <action android:name="set_log_level"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.qqlivetv.model.open.SyncBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.tv.favorite.del.toapp"/>
+                <action android:name="com.tv.history.del.toapp"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.tencent.qqlivetv.h5.CloseH5ProcessBroadCastReceiver" android:process=":webview">
+            <intent-filter>
+                <action android:name="com.ktcp.video.H5.stop_service"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ktcp.video.receiver.UpgradeReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="video_apk_upgrade"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.tencent.qqlivetv.model.open.OpenBroadcastReceiver">
+            <intent-filter>
+                <action android:name="QQLIVETV.OPEN.INTENT.CHANNEL.GOTO_CHANNEL"/>
+                <action android:name="QQLIVETV.OPEN.INTENT.SEARCH.SEARCH"/>
+                <action android:name="QQLIVETV.OPEN.INTENT.LIVE.OPEN_TVSTATION"/>
+                <action android:name="QQLIVETV.OPEN.INTENT.VOD.OPEN_VIDEO"/>
+                <action android:name="QQLIVETV.OPEN.INTENT.VOD.OPEN_DETAIL"/>
+                <action android:name="QQLIVETV.OPEN.INTENT.CHANNEL.GOTO_HOME"/>
+                <action android:name="com.tv.tothird.delall"/>
+                <action android:name="com.ktcp.video"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tenvideo2"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.tencent.qqlivetv.model.provider" android:exported="false" android:name="com.tencent.qqlivetv.model.provider.TVContentProvider"/>
+        <activity android:name="com.tencent.tads.splash.AdLandingPageActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:exported="false" android:name="com.ktcp.msg.lib.page.PushMsgListActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="false" android:name="com.ktcp.msg.lib.PushMsgReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="com.tencent.oma.push.ACTION_PUSH_MSG_RECEIVE"/>
+                <action android:name="com.tencent.guid"/>
+                <action android:name="com.ktcp.message.center.RECEIVABLE_MSG"/>
+                <action android:name="com.ktcp.message.center.REJECTIVE_MSG"/>
+                <action android:name="com.ktcp.message.center.permission.CHANGE_RED_DOT_STATE"/>
+                <action android:name="com.ktcp.message.center.SHOW_VCOIN_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ktcp.msg.lib.SwitchEnvReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="com.ktcp.message.center.SWITCH_ENV"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ktcp.msg.lib.BootCompletedReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.tencent.device.TXDeviceService" android:process=":push">
+            <intent-filter android:priority="1000">
+                <action android:name="iotdevice.startservice"/>
+                <action android:name="MITV.COMMENT.SERVICE"/>
+                <category android:name="android.intent.category.Default"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.tencent.device.receiver.IOTStartReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.Default"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.device.receiver.IOTOnDataPointReceiver">
+            <intent-filter>
+                <action android:name="OnReceiveDataPoint"/>
+                <action android:name="OnBinderInoutLan"/>
+                <category android:name="android.intent.category.Default"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.ktcp.msg.lib.PushMsgService" android:process=":push">
+            <intent-filter android:priority="1000">
+                <action android:name="MITV.COMMENT.SERVICE"/>
+                <category android:name="android.intent.category.Default"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.ktcp.msg.lib.db.video" android:exported="true" android:name="com.ktcp.msg.lib.db.PushMsgProvider" android:process=":push"/>
+        <receiver android:name="com.tencent.oma.push.BootstrapReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED" android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.oma.push.PushAlarmReceiver" android:process=":push"/>
+        <service android:enabled="true" android:name="com.tencent.oma.push.PushService" android:process=":push"/>
+        <service android:enabled="true" android:name="com.tencent.oma.push.notify.NotifyService" android:process=":push"/>
+        <receiver android:exported="true" android:name="com.ktcp.video.receiver.MessageAnswerReceiver">
+            <intent-filter>
+                <action android:name="com.ktcp.message.center.CAN_PROCESS_VIDEO_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ktcp.video.receiver.SendAccoutInfoToUpgrade">
+            <intent-filter>
+                <action android:name="com.ktcp.video.FETCH_OPENID_INFO"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ktcp.video.activity.ProjectionPlayerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:name="com.ktcp.video.receiver.BootstrapProjectionReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="com.tencent.guid"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ktcp.video.receiver.ProjectionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+                <action android:name="com.tencent.projection"/>
+                <action android:name="com.tencent.guid"/>
+                <action android:name="com.tencent.projection.get_qrcode_data"/>
+                <action android:name="com.tencent.projection.get_member_data"/>
+                <action android:name="android.intent.action.PROJECTION_PLAYER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.tencent.qqlive.projection.LongPullService" android:process=":projection">
+            <intent-filter android:priority="1000">
+                <action android:name="com.tencent.qqlive.projection.LongPullService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.ktcp.video.projection.ProjectionReportErrorService"/>
+        <service android:enabled="true" android:name="com.ktcp.video.service.IflytekXiriService" android:process=":voice">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.iflytek.xiri2.app.NOTIFY"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.ktcp.video.service.UpgradeService" android:process=":upgrade">
+            <intent-filter android:priority="1000">
+                <action android:name="com.ktcp.video.UPGRADE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.ktcp.video.h5.H5Service">
+            <intent-filter android:priority="1000">
+                <action android:name="com.ktcp.video.H5.start_service"/>
+                <category android:name="android.intent.category.Default"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.ktcp.video.h5.H5TVAPIService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.ktcp.video.H5TVAPI.start_service"/>
+                <category android:name="android.intent.category.Default"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.tencent.httpproxy.service.PlayService" android:process=":cache"/>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+</manifest>

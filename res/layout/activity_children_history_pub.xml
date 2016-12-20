@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bg_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/left_layout" android:layout_width="@dimen/span_640" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span_150" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/qrimg_layout" android:layout_width="@dimen/span_640" android:layout_height="@dimen/span_640" android:layout_marginTop="@dimen/span_50" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/qrimg" android:background="@drawable/bg_feedback_qr_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/feedback_loading_progress_bar" />
+            <TextView android:textSize="@dimen/span_40" android:textColor="@color/white60" android:gravity="center" android:id="@id/text_network_remind_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span_240" android:text="@string/childrenhistory_network_remind_title" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/span_40" android:textColor="@color/white60" android:gravity="center" android:id="@id/text_network_reconnect_operation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span_300" android:text="@string/childrenhistory_network_remind_operation" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/span_32" android:textColor="@color/white" android:gravity="center" android:background="@drawable/bg_text_feedback_remind" android:layout_width="fill_parent" android:layout_height="@dimen/span_80" android:layout_marginTop="@dimen/span_15" android:text="@string/childrenhistory_qrcode_remind" android:layout_below="@id/qrimg_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rightLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span_80" android:layout_marginTop="@dimen/span_160" android:layout_toRightOf="@id/left_layout">
+        <TextView android:textSize="@dimen/span_52" android:textColor="@color/white" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span_47" android:text="@string/childrenhistory_title" />
+        <TextView android:textSize="@dimen/span_36" android:textColor="@color/white80" android:id="@id/content_line1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span_36" android:text="@string/childrenhistory_tips1" android:layout_below="@id/title" />
+        <TextView android:textSize="@dimen/span_36" android:textColor="@color/white80" android:id="@id/content_line2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/span_20" android:text="@string/childrenhistory_tips2" android:layout_below="@id/content_line1" />
+        <TextView android:textSize="@dimen/span_36" android:textColor="@color/white80" android:id="@id/content_line3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span_30" android:layout_marginTop="@dimen/span_20" android:text="@string/childrenhistory_tips3" android:layout_below="@id/content_line2" />
+        <ImageView android:layout_width="@dimen/span_250" android:layout_height="@dimen/span_345" android:layout_marginLeft="@dimen/span_12" android:layout_marginTop="@dimen/span_36" android:src="@drawable/image_history_children" android:layout_below="@id/content_line3" />
+    </RelativeLayout>
+</RelativeLayout>

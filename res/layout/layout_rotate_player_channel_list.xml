@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/rotate_player_channel_bg" android:layout_width="@dimen/rotate_player_channel_list_width" android:layout_height="fill_parent" android:alpha="0.95"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/rotate_player_menu_item_height" android:layout_marginTop="@dimen/rotate_player_channel_list_margin_top">
+        <ImageView android:layout_width="@dimen/rotate_player_channelId_margin_left" android:layout_height="@dimen/rotate_player_channelId_margin_left" android:layout_marginLeft="@dimen/rotate_player_channelId_margin_left" android:src="@drawable/rotate_player_channel_icon" />
+        <TextView android:textSize="@dimen/rotate_player_36sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_channelName_margin_left" android:text="@string/rotate_player_channel_list" />
+    </LinearLayout>
+    <View android:background="#ffffffff" android:layout_width="@dimen/rotate_player_video_list_left_margin" android:layout_height="1.0px" android:alpha="0.3" />
+    <com.tencent.qqlivetv.widget.SmoothScrollListView android:id="@id/channel_list_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/rotate_player_menu_list_selector" android:divider="@null" android:layout_centerVertical="true" android:fastScrollEnabled="false" />
+</LinearLayout>

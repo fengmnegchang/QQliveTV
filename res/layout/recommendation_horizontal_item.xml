@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:gravity="center" android:background="@drawable/bg_carousel_items" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:clipChildren="false" android:layout_width="@dimen/recommendation_fat_list_item_width" android:layout_height="@dimen/recommendation_fat_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:percent="http://schemas.android.com/apk/res-auto">
+    <com.tencent.qqlivetv.widget.percent.PercentFrameLayout android:id="@id/content_container" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentTop="true" percent:layout_widthPercent="77%" percent:layout_heightPercent="75.5%">
+        <com.tencent.qqlivetv.model.imageslide.TVImageView android:id="@id/pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/recommendation_fatlist_time_textSize" android:textStyle="bold" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/duration" android:background="#bb000000" android:paddingLeft="@dimen/recommendation_fat_list_item_time_paddingLeft" android:layout_width="fill_parent" android:layout_height="@dimen/recommendation_fat_list_item_time_height" />
+            <TextView android:textSize="@dimen/recommendation_fatlist_title_textSize" android:textColor="#ccfefefe" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/title" android:background="#ff252525" android:paddingLeft="@dimen/recommendation_fat_list_item_text_padding" android:paddingRight="@dimen/recommendation_fat_list_item_text_padding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/recommendation_fat_list_item_text_height" android:lines="2" />
+        </LinearLayout>
+    </com.tencent.qqlivetv.widget.percent.PercentFrameLayout>
+</com.tencent.qqlivetv.widget.percent.PercentLinearLayout>

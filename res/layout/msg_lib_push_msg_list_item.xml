@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/msg_lib_push_msg_list_item_container" android:layout_width="wrap_content" android:layout_height="wrap_content">"
+<ImageView android:gravity="center|left" android:layout_gravity="center" android:id="@id/msg_lib_item_icon" android:layout_width="@dimen/msg_list_item_icon_width" android:layout_height="@dimen/msg_list_item_icon_height" android:layout_marginLeft="@dimen/msg_list_item_icon_margin_left" android:src="@drawable/msg_lib_business_msg" />
+        <TextView android:textSize="@dimen/msg_list_item_wording_text_size" android:textColor="@drawable/msg_list_white" android:gravity="center|left" android:layout_gravity="center" android:id="@id/msg_lib_item_wording" android:layout_width="@dimen/msg_list_item_wording_width" android:layout_height="@dimen/msg_list_item_wording_height" android:layout_marginLeft="@dimen/msg_list_item_wording_margin_left" android:text="一条新的推送消息" />
+    </LinearLayout>
+</LinearLayout>

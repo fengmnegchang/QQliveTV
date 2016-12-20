@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/live_notify_dialog_btn_press_focus" />
+    <corners android:radius="5.0px" />
+    <stroke android:width="0.0dip" android:color="#ff000000" />
+</shape>

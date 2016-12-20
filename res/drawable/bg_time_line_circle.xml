@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="@dimen/timeline_circle_corner" />
+            <solid android:color="@color/timeline_circle_color" />
+            <size android:height="@dimen/timeline_circle_r" android:width="@dimen/timeline_circle_r" />
+        </shape>
+    </item>
+    <item>
+        <selector
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="oval">
+                    <corners android:radius="@dimen/timeline_circle_corner" />
+                    <solid android:color="@color/timeline_circle_color" />
+                    <size android:height="@dimen/timeline_circle_r" android:width="@dimen/timeline_circle_r" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</layer-list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/player_episode_single_item_bg" android:layout_width="@dimen/player_episode_single_item_width" android:layout_height="@dimen/player_menu_item_height_normal" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/detail_episode_item_text_size" android:gravity="center" android:id="@id/detail_episode_textview" android:focusable="false" android:layout_width="@dimen/player_episode_single_item_width" android:layout_height="@dimen/player_menu_item_height_normal" android:text="@null" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/detail_icon_tailer" android:focusable="false" android:layout_width="@dimen/detail_singel_episode_icon_tailer_width" android:layout_height="@dimen/detail_singel_episode_icon_tailer_height" android:src="@drawable/icon_trailer" android:contentDescription="@null" />
+</FrameLayout>

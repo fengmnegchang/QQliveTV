@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sport_players_nav_item_textSize" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:id="@id/tab_text" android:background="@drawable/bg_carousel_title_menu_item" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/tab_underline" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sport_players_nav_item_underline_marginTop" android:src="@drawable/carouse_menu_title_underline" android:scaleType="fitXY" android:contentDescription="@null" />
+</LinearLayout>

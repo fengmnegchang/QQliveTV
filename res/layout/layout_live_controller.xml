@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/video_player_watermask" android:background="@drawable/water_mask_fg" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <RelativeLayout android:id="@id/video_top_layout" android:background="@color/player_overlayer_background" android:layout_width="fill_parent" android:layout_height="@dimen/video_top_layout_height">
+        <TextView android:textSize="@dimen/video_title_text_size" android:textColor="@android:color/white" android:id="@id/video_title_text" android:layout_width="@dimen/video_title_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/video_title_margin" android:text="@string/app_name" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/video_preparing_progress_bar_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ProgressBar android:id="@id/video_preparing_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/video_player_loading_progress_bar_margin_right" android:layout_toLeftOf="@id/video_preparing_progress_loading_text" android:layout_centerVertical="true" style="@style/video_player_loading_progress_bar" />
+            <TextView android:textSize="@dimen/video_loading_text_size" android:textColor="@android:color/white" android:id="@id/video_preparing_progress_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/video_preparing_progress_loading_text_margin_right" android:text="@string/video_player_loading" android:layout_toLeftOf="@id/video_preparing_progress_loading_speed_text" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/video_loading_text_size" android:textColor="@android:color/white" android:id="@id/video_preparing_progress_loading_speed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/video_preparing_progress_loading_speed_text_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/video_bottom_layout" android:background="@color/player_overlayer_background" android:layout_width="fill_parent" android:layout_height="@dimen/video_bottom_layout_height">
+        <ImageView android:id="@id/menu_remind_image" android:layout_width="@dimen/menu_remind_image_size" android:layout_height="@dimen/menu_remind_image_size" android:layout_marginLeft="@dimen/video_bottom_left_margin" android:src="@drawable/player_menu_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/player_menu_remind_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/player_menu_remind_text_margin_left" android:text="@string/player_menu_remind_text_live" android:layout_toRightOf="@id/menu_remind_image" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center|right" android:orientation="vertical" android:id="@id/video_voice_layout" android:layout_width="@dimen/video_voice_layout_width" android:layout_height="@dimen/video_voice_layout_height" android:layout_marginRight="@dimen/video_voice_layout_margin_right">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/voice_progress" android:background="@drawable/bg_video_player_voice1" android:layout_width="@dimen/voice_progress_layout_width" android:layout_height="@dimen/voice_progress_layout_height" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/voice_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_video_player_voice2" android:contentDescription="@null" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/voice_progressbar_layout_width" android:layout_height="fill_parent">
+            <View android:background="@drawable/bg_video_player_voice3" android:layout_width="@dimen/voice_progressbar_layout_width" android:layout_height="fill_parent" android:layout_above="@id/voice_progressbar" />
+            <ImageView android:id="@id/voice_progressbar" android:background="@drawable/bg_video_player_voice4" android:layout_width="@dimen/voice_progressbar_layout_width" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.tencent.qqlivetv.model.videoplayer.VideoPlayerMenuView android:layout_gravity="bottom" android:id="@id/controller_player_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

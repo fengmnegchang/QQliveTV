@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/vod_menu_tips_background" android:layout_width="@dimen/vod_menu_tips_background_width" android:layout_height="@dimen/vod_menu_tips_background_height" android:layout_marginLeft="@dimen/vod_menu_tips_background_margin_left" android:src="@drawable/vod_menu_tips_background" />
+    <ImageView android:id="@id/vod_menu_tips_menu_icon" android:background="@drawable/vod_menu_tips_menu_icon_animation" android:visibility="invisible" android:layout_width="@dimen/vod_menu_tips_menu_icon_width" android:layout_height="@dimen/vod_menu_tips_menu_icon_height" android:layout_marginLeft="@dimen/vod_menu_tips_menu_icon_margin_left" android:layout_marginBottom="@dimen/vod_menu_tips_menu_icon_margin_bottom" android:layout_alignBottom="@id/vod_menu_tips_background" />
+    <ImageView android:id="@id/vod_menu_tips_hand" android:layout_width="@dimen/vod_menu_tips_hand_width" android:layout_height="@dimen/vod_menu_tips_hand_height" android:layout_marginLeft="@dimen/vod_menu_tips_hand_margin_left" android:src="@drawable/vod_menu_tips_hand" android:layout_alignBottom="@id/vod_menu_tips_background" />
+</RelativeLayout>

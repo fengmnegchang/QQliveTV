@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/rotate_player_vip_tips_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rotate_player_vip_tips_image" android:focusable="false" android:layout_width="@dimen/rotate_player_vip_tips_icon_width" android:layout_height="@dimen/rotate_player_vip_tips_icon_height" android:src="@drawable/rotate_player_vip_tips_icon" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/rotate_player_52sp" android:textColor="#fffefefe" android:id="@id/rotate_player_vip_tips_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rotate_player_channelId_margin_left" android:layout_below="@id/rotate_player_vip_tips_image" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/rotate_player_40sp" android:textColor="#ff999999" android:id="@id/rotate_player_vip_tips_extra_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rotate_player_infoview_padding_top" android:layout_below="@id/rotate_player_vip_tips_text" android:layout_centerHorizontal="true" />
+</RelativeLayout>

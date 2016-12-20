@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="msg_lib_marquee_h">75</integer>
+    <integer name="marquee_h">100</integer>
+</resources>

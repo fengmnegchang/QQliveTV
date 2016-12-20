@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:gravity="center" android:background="@drawable/bg_carousel_items" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:clipChildren="false" android:layout_width="@dimen/layout_sport_teams_item_WH" android:layout_height="@dimen/layout_sport_teams_item_WH"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" xmlns:percent="http://schemas.android.com/apk/res-auto">
+    <com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/team_item_bg" android:layout_width="0.0dip" android:layout_height="0.0dip" percent:layout_widthPercent="78%" percent:layout_heightPercent="78%">
+        <com.tencent.qqlivetv.model.imageslide.TVImageView android:id="@id/pic" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" percent:layout_widthPercent="76.67%" percent:layout_heightPercent="76.67%" percent:layout_marginTopPercent="3.33%h" />
+        <TextView android:textColor="#ff999999" android:ellipsize="marquee" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" percent:layout_marginTopPercent="3.8%h" percent:layout_textSizePercent="10%h" />
+    </com.tencent.qqlivetv.widget.percent.PercentLinearLayout>
+</com.tencent.qqlivetv.widget.percent.PercentLinearLayout>

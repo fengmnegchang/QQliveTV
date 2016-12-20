@@ -1,0 +1,155 @@
+{
+    "strategys": [
+        {
+            "condition": {
+                "models": [
+                    {
+                        "model": "Nexus 7"
+                    },
+                    {
+                        "model": "N9201"
+                    },
+                    {
+                        "model": "KDL65W850C"
+                    },
+                    {
+                        "model": "BRAVIA 2015"
+                    },
+                    {
+                        "model": "LG Android TV V4"
+                    },
+                    {
+                        "model": "Konka Android TV 628"
+                    },
+                    {
+                        "model": "FUNBOX_1.0"
+                    },
+                    {
+                        "model": "K220"
+                    },
+                    {
+                        "model": "Android TV on Haier 6A600"
+                    },
+                    {
+                        "model": "Vision_TV"
+                    },
+                    {
+                        "model": "EC590"
+                    },
+                    {
+                        "model": "KIUI_MS9180_F"
+                    },
+                    {
+                        "model": "BRAVIA 4K 2015"
+                    },
+                    {
+                        "model": "Q+"
+                    }
+                ]
+            },
+            "player_config": {
+                "vod_player": "self",
+                "live_player": "self",
+                "loop_player": "self"
+            }
+        },
+        {
+            "condition": {
+                "models": [
+                    {
+                        "model": "VIDAA_TV"
+                    }
+                ]
+            },
+            "player_config": {
+                "is_allow_switch_2_soft_in_mgr": false
+            }
+        },
+
+        {
+            "condition": {
+                "models": [
+                    {
+                        "model": "Generic Android on mt5882"
+                    },
+                    {
+                        "model": "rtd299x_tv030"
+                    },
+                    {
+                        "model": "Android TV on Tcl 901"
+                    },
+                    {
+                        "model": "TCL Android TV"
+                    },
+                    {
+                        "model": "konka KKHi3751AV500"
+                    },
+                    {
+                        "model": "Skyworth Hi3751MV500"
+                    },
+                    {
+                        "model": "Android TV on Konka 901 Letv C1S"
+                    },
+                    {
+                        "model": "Konka Android TV 2992"
+                    },
+                    {
+                        "model": "Generic Android on mt5882"
+                    },
+                    {
+                        "model": "Skyworth Hi3751MV500"
+                    },
+                    {
+                        "model": "Konka Android TV 2991"
+                    },
+                    {
+                        "model": "Full AOSP on MStar Eagle"
+                    },
+                    {
+                        "model": "ChangHong Android TV"
+                    },
+                    {
+                        "model": "Android TV on Konka 901"
+                    },
+                    {
+                        "model": "Konka Android TV 828"
+                    }
+                ]
+            },
+            "player_config": {
+                "is_allow_system_2_self": false,
+                "is_allow_self_2_system": true,
+                "live_player": "system",
+                "vod_player": "system",
+                "loop_player": "system"
+            }
+        },
+        {
+            "condition": {
+                "models": [
+                    {
+                        "model": "10MOONS_ELF5"
+                    },
+                    {
+                        "model": "Full AOSP on Skyworth Amber3"
+                    },
+                    {
+                        "model": "Full AOSP on Hisense Amber3(NAND)"
+                    },
+                    {
+                        "model": "Full AOSP on Konka Amber3"
+                    },
+                    {
+                        "model": "Full AOSP on Haier Amber3"
+                    },
+                    {
+                        "model": "Skyworth Hi3751V60064bit"
+                    }
+                ]
+            },
+            "player_config": {
+                "check_buffer_by_position": false
+            }
+        }
+    ]
+}

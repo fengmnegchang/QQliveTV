@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<patch_info>
+	<patch_ver>0</patch_ver> <!--整型 插件版本号-->
+	<patch_ver_name>1.0.0</patch_ver_name> <!--插件版本号，显示用，可选-->
+	<patch_name>webview</patch_name><!--插件名称-->
+		<files><!--文件列表-->
+		<file>
+			<file_name>webview.jar</file_name> <!--文件名称1 -->
+			<file_md5>3250652e60c4d30c478c4b74899258e4</file_md5> <!--文件MD5 1-->
+		</file>
+	</files>
+	<host_info><!--可运行的宿主1-->
+		<host>
+			<name>app</name> <!--String -->
+			<min_ver>800</min_ver> <!--整型 兼容宿主最低版本号，对于apk，就是versionCode-->
+			<max_ver>840</max_ver> <!--整型 兼容宿主最高版本号，对于apk，就是versionCode-->
+		</host>
+	</host_info>
+	<build_host_info><!--编译使的宿主ID,主APP为1-->
+		<name>app</name> <!--String -->
+		<ver>800</ver>
+	</build_host_info>
+	<type>1</type><!--插件类型,1为dex文件，2为apk，3为so，4为so+资源-->
+</patch_info>

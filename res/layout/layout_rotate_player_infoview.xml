@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#cc000000" android:paddingLeft="@dimen/rotate_player_channelId_margin_left" android:paddingTop="@dimen/rotate_player_infoview_padding_top" android:paddingRight="@dimen/rotate_player_channelId_margin_left" android:paddingBottom="@dimen/rotate_player_channelId_margin_left" android:layout_width="@dimen/rotate_player_infoview_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/span_55" android:layout_height="@dimen/span_30" android:src="@drawable/icon_rotate_playing" />"
+<com.tencent.qqlivetv.model.rotateplayer.RotatePlayerScrollTextView android:textSize="@dimen/rotate_player_42sp" android:textColor="#fffefefe" android:ellipsize="marquee" android:id="@id/cur_video_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_channelName_margin_left" android:text="@string/rotate_player_get_channel_info" android:scrollHorizontally="true" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/rotate_player_infoview_padding_top" android:alpha="0.5" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rotate_player_infoview_padding_top">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="@dimen/rotate_player_channel_info_name_width" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/span_55" android:layout_height="@dimen/span_30" android:layout_marginRight="@dimen/rotate_player_channelName_margin_left" android:src="@drawable/icon_rotate_channel" />
+            <com.tencent.qqlivetv.model.rotateplayer.RotatePlayerScrollTextView android:textSize="@dimen/rotate_player_36sp" android:textColor="#fffefefe" android:ellipsize="marquee" android:id="@id/channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rotate_player_get_channel_info" android:scrollHorizontally="true" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="@dimen/rotate_player_menu_margin_top" android:layout_height="@dimen/rotate_player_menu_margin_top" android:src="@drawable/rotate_player_menu" />
+            <TextView android:textSize="@dimen/rotate_player_30sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_infoview_padding_left" android:text="@string/rotate_player_setting" />
+            <ImageView android:layout_width="@dimen/rotate_player_menu_margin_top" android:layout_height="@dimen/rotate_player_menu_margin_top" android:layout_marginLeft="@dimen/rotate_player_channelId_margin_left" android:src="@drawable/rotate_player_ok" />
+            <TextView android:textSize="@dimen/rotate_player_30sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rotate_player_infoview_padding_left" android:text="@string/rotate_player_channel_list" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

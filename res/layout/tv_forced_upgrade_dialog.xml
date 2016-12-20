@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/bg_layout" android:background="@color/player_overlayer_background" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bg_dialog" android:background="@color/upgrade_dialog_bg_color" android:focusable="false" android:layout_width="@dimen/upgrade_dialog_width" android:layout_height="@dimen/upgrade_dialog_height">
+        <ImageView android:id="@id/dialog_logo" android:background="@drawable/upgrade_dialog_default_logo" android:layout_width="@dimen/tvdialog_logo_width" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/dialog_content" android:paddingLeft="@dimen/span_30" android:paddingTop="@dimen/span_110" android:paddingRight="@dimen/span_45" android:paddingBottom="@dimen/span_60" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/force_dialog_title_font_size" android:textColor="@color/black" android:id="@id/title" android:background="@drawable/transparent" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span_50" android:singleLine="true" />
+            <RelativeLayout android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/span_10" android:layout_marginBottom="@dimen/span_120" android:layout_below="@id/title">
+                <ScrollView android:id="@id/dialog_msg_scrollview" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <LinearLayout android:orientation="vertical" android:id="@id/dialog_msg_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                </ScrollView>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/dialog_default_area" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span_40" android:layout_alignParentBottom="true">
+                <Button android:textSize="@dimen/tvdialog_btn_font_size" android:textColor="@drawable/button_oval_text_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/positiveButton" android:background="@drawable/button_oval_bg" android:focusable="true" android:layout_width="@dimen/span_280" android:layout_height="@dimen/span_112" android:singleLine="true" />
+                <Button android:textSize="@dimen/tvdialog_btn_font_size" android:textColor="@drawable/button_oval_text_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/negativeButton" android:background="@drawable/button_oval_bg" android:focusable="true" android:layout_width="@dimen/span_280" android:layout_height="@dimen/span_112" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/dialog_force_area" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span_40" android:layout_alignParentBottom="true">
+                <Button android:textSize="@dimen/tvdialog_btn_font_size" android:textColor="@drawable/button_oval_text_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/force_button" android:background="@drawable/button_oval_bg" android:focusable="true" android:layout_width="@dimen/span_280" android:layout_height="@dimen/span_112" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/dialog_progress_area" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span_55" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/span_32" android:textColor="@color/upgrade_download_progress_textcolor" android:id="@id/download_progress_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

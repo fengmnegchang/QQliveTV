@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qqlivetv.widget.percent.PercentRelativeLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:percent="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/item_focus_bg" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/selectandsee_item_textstate_focused" android:scaleType="fitXY" android:contentDescription="@null" percent:layout_marginLeftPercent="5%" />
+    <com.tencent.qqlivetv.widget.percent.PercentRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/pic" android:visibility="invisible" android:src="@drawable/selectandsee_item_left_unfocus" android:layout_centerVertical="true" percent:layout_widthPercent="6%" percent:layout_heightPercent="70%" />
+        <com.tencent.qqlivetv.widget.percent.PercentRelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/pic" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/span_30" android:textColor="#ffafafaf" android:ellipsize="end" android:gravity="left" android:id="@id/channel_name" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" percent:layout_marginLeftPercent="17.14%" percent:layout_paddingRightPercent="17.14%" />
+            <ImageView android:id="@id/underline_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/span_15" android:layout_marginTop="@dimen/span_8" android:scaleType="fitXY" android:layout_below="@id/channel_name" android:contentDescription="@null" percent:layout_marginLeftPercent="18.14%" />
+        </com.tencent.qqlivetv.widget.percent.PercentRelativeLayout>
+    </com.tencent.qqlivetv.widget.percent.PercentRelativeLayout>
+</com.tencent.qqlivetv.widget.percent.PercentRelativeLayout>

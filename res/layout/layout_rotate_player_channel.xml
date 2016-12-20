@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/rotate_player_video_list_left_margin">
+        <com.tencent.qqlivetv.model.rotateplayer.RotatePlayerVideoListView android:id="@id/rotate_player_video_list_view" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.tencent.qqlivetv.model.rotateplayer.RotatePlayerChannelListView android:id="@id/rotate_player_channel_list_view" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+</merge>

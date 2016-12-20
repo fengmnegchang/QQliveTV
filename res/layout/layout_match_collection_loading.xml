@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar android:id="@id/iv_match_collection_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDuration="800" style="@style/loading_progress_circle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

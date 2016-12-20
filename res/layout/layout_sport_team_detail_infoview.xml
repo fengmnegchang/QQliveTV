@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qqlivetv.widget.percent.PercentRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:percent="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.tencent.qqlivetv.model.imageslide.TVImageView android:id="@id/team_logo_imageview" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" custom:layout_widthPercent="9.1%" />
+    <com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/team_logo_imageview" android:layout_centerInParent="true" android:layout_centerVertical="true" custom:layout_marginLeftPercent="2.31%">
+        <TextView android:textColor="#fffefefe" android:id="@id/team_name_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:layout_marginTopPercent="13%" custom:layout_textSizePercent="26.25%" />
+        <com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" custom:layout_widthPercent="53%">
+            <TextView android:textColor="#ff999999" android:ellipsize="end" android:id="@id/team_record_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:maxLength="22" custom:layout_textSizePercent="38%" />
+            <TextView android:textColor="#ff999999" android:ellipsize="end" android:id="@id/team_rank_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:maxLength="22" custom:layout_marginLeftPercent="1.74%" custom:layout_textSizePercent="38%" />
+        </com.tencent.qqlivetv.widget.percent.PercentLinearLayout>
+    </com.tencent.qqlivetv.widget.percent.PercentLinearLayout>
+    <com.tencent.qqlivetv.widget.percent.PercentLinearLayout android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <com.tencent.qqlivetv.widget.sports.HorizontalGridView android:id="@id/sport_button_recyclerview" android:focusable="true" android:scrollbars="none" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" custom:layout_paddingLeftPercent="2%" custom:layout_paddingRightPercent="2%" custom:horizontalMarginPercent="-0.025" custom:rowsHeight="wrap_content" custom:columnWidthPercent="0.15" />
+    </com.tencent.qqlivetv.widget.percent.PercentLinearLayout>
+</com.tencent.qqlivetv.widget.percent.PercentRelativeLayout>

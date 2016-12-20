@@ -1,0 +1,192 @@
+{
+  "cibntv": {
+    "player_host_config": {
+      "time_cgi_host": "http://vv.play.cp81.ott.cibntv.net/checktime",
+      "time_cgi_host_bk": "http://bkvv.play.cp81.ott.cibntv.net/checktime",
+      "vinfo_cgi_host": "http://vv.play.cp81.ott.cibntv.net/getvinfo",
+      "vinfo_cgi_host_bk": "http://bkvv.play.cp81.ott.cibntv.net/getvinfo",
+      "vkey_cgi_host": "http://vv.play.cp81.ott.cibntv.net/getvkey",
+      "vkey_cgi_host_bk": "http://bkvv.play.cp81.ott.cibntv.net/getvkey",
+      "ad_config_cgi_host": "http://mcgi.play.cp81.ott.cibntv.net/commdatav2",
+      "sdk_config_cgi_host": "http://sdkconfig.play.cp81.ott.cibntv.net/getmfomat",
+      "zb_cgi_host": "http://tv.cp81.ott.cibntv.net/openqq/info.zb/",
+      "zb_cgi_host_bk": "http://tv.cp81.ott.cibntv.net/openqq/info.zb/",
+      "mdevstat_address": "mdevstat.conn.cp81.ott.cibntv.net",
+      "mdevstat_address_bk": "bkmdevstat.conn.cp81.ott.cibntv.net",
+      "update_host": "mcgi.play.cp81.ott.cibntv.net",
+      "update_host_path": "/commdatav2?cmd=51",
+      "ad_host": "cp81.ott.cibntv.net",
+      "mta_host": "omgmta.play.cp81.ott.cibntv.net"
+    },
+    "httpproxy_config": {
+      "time_cgi_host": "http://vv.play.cp81.ott.cibntv.net/checktime",
+      "time_cgi_host_bk": "http://vv.play.cp81.ott.cibntv.net/checktime",
+      "vkey_cgi_host": "http://vv.play.cp81.ott.cibntv.net/getvkey",
+      "vkey_cgi_host_bk": "http://vv.play.cp81.ott.cibntv.net/getvkey",
+      "bkey_cgi_host": "http://vv.play.cp81.ott.cibntv.net/getvbkey",
+      "bkey_cgi_host_bk": "http://vv.play.cp81.ott.cibntv.net/getvbkey",
+      "vinfo_cgi_host": "http://vv.play.cp81.ott.cibntv.net/getvinfo",
+      "vinfo_cgi_host_bk": "http://vv.play.cp81.ott.cibntv.net/getvinfo",
+      "btrace_boss_cgi": "http://btrace.play.cp81.ott.cibntv.net/kvcollect",
+      "tpt_server_address": "http://downloadtpt.play.cp81.ott.cibntv.net",
+      "tpt_server_address_bk": "http://bk-downloadtpt.play.cp81.ott.cibntv.net",
+      "redirect_server_address": "http://ps-p2p.play.cp81.ott.cibntv.net",
+      "redirect_server_address_bk": "http://bk-ps.play.cp81.ott.cibntv.net",
+      "stun_server_address": "http://stun.play.cp81.ott.cibntv.net",
+      "stun_server_address_bk": "http://bk-stun.play.cp81.ott.cibntv.net",
+      "punch_server_address": "http://punch-p2p.play.cp81.ott.cibntv.net",
+      "punch_server_address_bk": "http://bk-punch.play.cp81.ott.cibntv.net",
+      "uptest_server_address": "http://uptest.play.cp81.ott.cibntv.net",
+      "video_dispatch": "http://video-dispatch.play.cp81.ott.cibntv.net",
+      "mdevstat_address": "mdevstat.conn.cp81.ott.cibntv.net"
+    },
+    "ckey_config": {
+      "rlog": "rlog-video.conn.cp81.ott.cibntv.net",
+      "rlog_bk": "bkrlog-video.conn.cp81.ott.cibntv.net",
+       "port":9917,
+       "port_bk":9918
+    }
+  },
+
+  "snm": {
+    "player_host_config":
+    {
+      "time_cgi_host":"http://vv.play.aiseet.atianqi.com/checktime",
+      "time_cgi_host_bk":"http://bkvv.play.aiseet.atianqi.com/checktime",
+      "vinfo_cgi_host":"http://vv.play.aiseet.atianqi.com/getvinfo",
+      "vinfo_cgi_host_bk":"http://bkvv.play.aiseet.atianqi.com/getvinfo",
+      "vkey_cgi_host":"http://vv.play.aiseet.atianqi.com/getvkey",
+      "vkey_cgi_host_bk":"http://bkvv.play.aiseet.atianqi.com/getvkey",
+      "ad_config_cgi_host":"http://mcgi.play.aiseet.atianqi.com/commdatav2",
+      "sdk_config_cgi_host":"http://sdkconfig.play.aiseet.atianqi.com/getmfomat",
+      "zb_cgi_host":"http://tv.aiseet.atianqi.com/openqq/info.zb/",
+      "zb_cgi_host_bk":"http://tv.aiseet.atianqi.com/openqq/info.zb/",
+      "mdevstat_address":"mdevstat.play.aiseet.atianqi.com",
+      "mdevstat_address_bk":"bkmdevstat.play.aiseet.atianqi.com",
+      "update_host":"mcgi.play.aiseet.atianqi.com",
+      "update_host_path":"/commdatav2?cmd=51",
+      "ad_host":"aiseet.atianqi.com",
+      "mta_host": "omgmta.play.aiseet.atianqi.com"
+    },
+    "httpproxy_config":
+    {
+      "time_cgi_host": "http://vv.play.aiseet.atianqi.com/checktime",
+      "time_cgi_host_bk": "http://vv.play.aiseet.atianqi.com/checktime",
+      "vkey_cgi_host": "http://vv.play.aiseet.atianqi.com/getvkey",
+      "vkey_cgi_host_bk": "http://vv.play.aiseet.atianqi.com/getvkey",
+      "bkey_cgi_host": "http://vv.play.aiseet.atianqi.com/getvbkey",
+      "bkey_cgi_host_bk": "http://vv.play.aiseet.atianqi.com/getvbkey",
+      "vinfo_cgi_host": "http://vv.play.aiseet.atianqi.com/getvinfo",
+      "vinfo_cgi_host_bk": "http://vv.play.aiseet.atianqi.com/getvinfo",
+      "btrace_boss_cgi": "http://btrace.play.aiseet.atianqi.com/kvcollect",
+      "tpt_server_address": "http://downloadtpt.play.aiseet.atianqi.com",
+      "tpt_server_address_bk": "http://bk-downloadtpt.play.aiseet.atianqi.com",
+      "redirect_server_address": "http://ps-p2p.play.aiseet.atianqi.com",
+      "redirect_server_address_bk": "http://bk-ps.play.aiseet.atianqi.com",
+      "stun_server_address": "http://stun.play.aiseet.atianqi.com",
+      "stun_server_address_bk": "http://bk-stun.play.aiseet.atianqi.com",
+      "punch_server_address": "http://punch-p2p.play.aiseet.atianqi.com",
+      "punch_server_address_bk": "http://bk-punch.play.aiseet.atianqi.com",
+      "uptest_server_address": "http://uptest.play.aiseet.atianqi.com",
+      "video_dispatch": "http://video-dispatch.play.aiseet.atianqi.com",
+      "mdevstat_address": "mdevstat.conn.aiseet.atianqi.com"
+    },
+    "ckey_config":
+    {
+      "rlog":"rlog-video.conn.aiseet.atianqi.com",
+      "rlog_bk":"bkrlog-video.conn.aiseet.atianqi.com",
+       "port":9917,
+       "port_bk":9918
+    }
+  },
+
+  "icntv": {
+    "player_host_config":
+    {
+      "time_cgi_host":"http://vv.play.t002.ottcn.com/checktime",
+      "time_cgi_host_bk":"http://bkvv.play.t002.ottcn.com/checktime",
+      "vinfo_cgi_host":"http://vv.play.t002.ottcn.com/getvinfo",
+      "vinfo_cgi_host_bk":"http://bkvv.play.t002.ottcn.com/getvinfo",
+      "vkey_cgi_host":"http://vv.play.t002.ottcn.com/getvkey",
+      "vkey_cgi_host_bk":"http://bkvv.play.t002.ottcn.com/getvkey",
+      "ad_config_cgi_host":"http://mcgi.play.t002.ottcn.com/commdatav2",
+      "sdk_config_cgi_host":"http://sdkconfig.play.t002.ottcn.com/getmfomat",
+      "zb_cgi_host":"http://tv.t002.ottcn.com/openqq/info.zb/",
+      "zb_cgi_host_bk":"http://tv.t002.ottcn.com/openqq/info.zb/",
+      "mdevstat_address":"mdevstat.play.t002.ottcn.com",
+      "mdevstat_address_bk":"bkmdevstat.play.t002.ottcn.com",
+      "mdevstat_address_port":1863,
+      "mdevstat_address_port_bk":1864,
+      "update_host":"mcgi.play.t002.ottcn.com",
+      "update_host_path":"/commdatav2?cmd=51",
+      "ad_host":"t002.ottcn.com",
+      "mta_host":"omgmta.play.t002.ottcn.com"
+    },
+    "httpproxy_config":
+    {
+      "time_cgi_host": "http://vv.play.t002.ottcn.com/checktime",
+      "time_cgi_host_bk": "http://bkvv.play.t002.ottcn.com/checktime",
+      "vkey_cgi_host": "http://vv.play.t002.ottcn.com/getvkey",
+      "vkey_cgi_host_bk": "http://bkvv.play.t002.ottcn.com/getvkey",
+      "bkey_cgi_host": "http://vv.play.t002.ottcn.com/getvbkey",
+      "bkey_cgi_host_bk": "http://bkvv.play.t002.ottcn.com/getvbkey",
+      "vinfo_cgi_host": "http://vv.play.t002.ottcn.com/getvinfo",
+      "vinfo_cgi_host_bk": "http://bkvv.play.t002.ottcn.com/getvinfo",
+      "btrace_boss_cgi": "http://btrace.play.t002.ottcn.com/kvcollect",
+      "tpt_server_address": "http://downloadtpt.play.t002.ottcn.com",
+      "tpt_server_address_bk": "http://bk-downloadtpt.play.t002.ottcn.com",
+      "redirect_server_address": "http://ps-p2p.play.t002.ottcn.com",
+      "redirect_server_address_bk": "http://bk-ps.play.t002.ottcn.com",
+      "stun_server_address": "http://stun.play.t002.ottcn.com",
+      "punch_server_address": "http://punch-p2p.play.t002.ottcn.com",
+      "punch_server_address_bk": "http://bk-punch.play.t002.ottcn.com",
+      "uptest_server_address": "http://uptest.play.t002.ottcn.com",
+      "video_dispatch": "http://video-dispatch.play.t002.ottcn.com",
+      "mdevstat_address": "mdevstat.conn.ott.video.qq.com"
+    }
+  },
+
+  "cnr": {
+    "player_host_config":
+    {
+      "time_cgi_host":"http://vv.play.ptyg.gitv.tv/checktime",
+      "time_cgi_host_bk":"http://bkvv.play.ptyg.gitv.tv/checktime",
+      "vinfo_cgi_host":"http://vv.play.ptyg.gitv.tv/getvinfo",
+      "vinfo_cgi_host_bk":"http://bkvv.play.ptyg.gitv.tv/getvinfo",
+      "vkey_cgi_host":"http://vv.play.ptyg.gitv.tv/getvkey",
+      "vkey_cgi_host_bk":"http://bkvv.play.ptyg.gitv.tv/getvkey",
+      "ad_config_cgi_host":"http://mcgi.play.ptyg.gitv.tv/commdatav2",
+      "sdk_config_cgi_host":"http://sdkconfig.play.ptyg.gitv.tv/getmfomat",
+      "zb_cgi_host":"http://tv.ptyg.gitv.tv/openqq/info.zb/",
+      "zb_cgi_host_bk":"http://tv.ptyg.gitv.tv/openqq/info.zb/",
+      "mdevstat_address":"mdevstat.play.ptyg.gitv.tv",
+      "mdevstat_address_bk":"bkmdevstat.play.ptyg.gitv.tv",
+      "update_host":"mcgi.play.ptyg.gitv.tv",
+      "update_host_path":"/commdatav2?cmd=51",
+      "ad_host":"ptyg.gitv.tv",
+      "mta_host":"omgmta.play.ptyg.gitv.tv"
+    },
+    "httpproxy_config":
+    {
+      "time_cgi_host": "http://vv.play.ptyg.gitv.tv/checktime",
+      "time_cgi_host_bk": "http://bkvv.play.ptyg.gitv.tv/checktime",
+      "vkey_cgi_host": "http://vv.play.ptyg.gitv.tv/getvkey",
+      "vkey_cgi_host_bk": "http://bkvv.play.ptyg.gitv.tv/getvkey",
+      "bkey_cgi_host": "http://vv.play.ptyg.gitv.tv/getvbkey",
+      "bkey_cgi_host_bk": "http://bkvv.play.ptyg.gitv.tv/getvbkey",
+      "vinfo_cgi_host": "http://vv.play.ptyg.gitv.tv/getvinfo",
+      "vinfo_cgi_host_bk": "http://bkvv.play.ptyg.gitv.tv/getvinfo",
+      "btrace_boss_cgi": "http://btrace.play.ptyg.gitv.tv/kvcollect",
+      "tpt_server_address": "http://downloadtpt.play.ptyg.gitv.tv",
+      "tpt_server_address_bk": "http://bk-downloadtpt.play.ptyg.gitv.tv",
+      "redirect_server_address": "http://ps-p2p.play.ptyg.gitv.tv",
+      "redirect_server_address_bk": "http://bk-ps.play.ptyg.gitv.tv",
+      "stun_server_address": "http://stun.play.ptyg.gitv.tv",
+      "punch_server_address": "http://punch-p2p.play.ptyg.gitv.tv",
+      "punch_server_address_bk": "http://bk-punch.play.ptyg.gitv.tv",
+      "uptest_server_address": "http://uptest.play.ptyg.gitv.tv",
+      "video_dispatch": "http://video-dispatch.play.ptyg.gitv.tv",
+      "mdevstat_address": "mdevstat.conn.ott.video.qq.com"
+    }
+  }
+}

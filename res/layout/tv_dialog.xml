@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@android:color/transparent" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/tvdialog_bg" android:paddingLeft="@dimen/tvdialog_pading_left" android:paddingTop="@dimen/tvdialog_padding_top" android:paddingRight="@dimen/tvdialog_pading_left" android:paddingBottom="@dimen/tvdialog_padding_top" android:focusable="false" android:layout_width="@dimen/tvdialog_width" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:layout_marginBottom="80.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_title_area" android:background="@drawable/transparent" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tvdialog_title_margin_bottom">
+            <TextView android:textSize="@dimen/tvdialog_title_font_size" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/title" android:background="@drawable/transparent" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/dialog_msg_area" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tvdialog_msg_margin_bottom" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/tvdialog_msg_font_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/message" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="8" android:lineSpacingExtra="@dimen/tvdialog_line_span" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/dialog_btn_default_area" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/tvdialog_btn_font_size" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/positiveButton" android:background="@drawable/upgrade_dialog_cancel_btn_bg" android:focusable="true" android:layout_width="@dimen/tvdialog_button_width" android:layout_height="@dimen/tvdialog_btn_height" android:singleLine="true" />
+            <Button android:textSize="@dimen/tvdialog_btn_font_size" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/negativeButton" android:background="@drawable/upgrade_dialog_cancel_btn_bg" android:focusable="true" android:layout_width="@dimen/tvdialog_button_width" android:layout_height="@dimen/tvdialog_btn_height" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

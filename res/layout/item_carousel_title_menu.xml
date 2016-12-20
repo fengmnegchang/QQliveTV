@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/player_menu_remind_text_size" android:textColor="@drawable/sel_carousel_item_text" android:gravity="center" android:id="@id/carsousel_menu_title_item_text" android:background="@drawable/bg_carousel_title_menu_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/carsousel_menu_title_underline" android:paddingBottom="@dimen/carsousel_title_underline_padding" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/carouse_menu_title_underline" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+</RelativeLayout>

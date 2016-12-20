@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/span_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/span_50" android:layout_height="@dimen/span_50" android:src="@drawable/dialog_message_tip_icon" android:scaleType="centerInside" />
+    <TextView android:textSize="@dimen/force_dialog_msg_font_size" android:textColor="@color/timeline_line_datatime_color" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/span_4" />
+</LinearLayout>

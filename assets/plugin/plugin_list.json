@@ -1,0 +1,32 @@
+{
+  "mediaplayer": {
+    "name":"mediaplayer",
+    "file_name":"mediaplayer.jar",
+    "default": {
+      "plugin_dir": "plugin_install_base/mediaplayer"
+    }
+  },
+  "webview": {
+    "name":"webview",
+    "file_name":"webview.jar",
+    "default": {
+      "plugin_dir": "plugin_install_base/webview"
+    }
+  },
+  "mediaplayerp2p": {
+    "name": "mediaplayerp2p",
+    "file_name":"libp2pproxy.so"
+  },
+  "mediaplayercore": {
+    "name": "mediaplayercore",
+    "file_name":"libPlayerCore_neon.so"
+  },
+  "mediaplayerckey": {
+    "name": "mediaplayerckey",
+    "file_name":"libckeygenerator.so"
+  },
+  "qqlivetv": {
+    "name": "qqlivetv",
+    "file_name":"libqqlivetv.so"
+  }
+}
