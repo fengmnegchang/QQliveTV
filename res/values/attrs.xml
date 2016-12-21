@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <attr name="layoutManager" format="string" />
     <attr name="spanCount" format="integer" />
     <attr name="reverseLayout" format="boolean" />
@@ -76,25 +77,29 @@
     <attr name="logoTextSize" format="dimension" />
     <attr name="logoTextColor" format="color" />
     <attr name="logoTextMarginTop" format="dimension" />
-    <attr name="layout_widthPercent" format="string" />
-    <attr name="layout_heightPercent" format="string" />
-    <attr name="layout_marginPercent" format="string" />
-    <attr name="layout_marginLeftPercent" format="string" />
-    <attr name="layout_marginTopPercent" format="string" />
-    <attr name="layout_marginRightPercent" format="string" />
-    <attr name="layout_marginBottomPercent" format="string" />
-    <attr name="layout_marginStartPercent" format="string" />
-    <attr name="layout_marginEndPercent" format="string" />
-    <attr name="layout_textSizePercent" format="string" />
-    <attr name="layout_maxWidthPercent" format="string" />
-    <attr name="layout_maxHeightPercent" format="string" />
-    <attr name="layout_minWidthPercent" format="string" />
-    <attr name="layout_minHeightPercent" format="string" />
-    <attr name="layout_paddingPercent" format="string" />
-    <attr name="layout_paddingTopPercent" format="string" />
-    <attr name="layout_paddingBottomPercent" format="string" />
-    <attr name="layout_paddingLeftPercent" format="string" />
-    <attr name="layout_paddingRightPercent" format="string" />
+
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string" />
+        <attr name="layout_heightPercent" format="string" />
+        <attr name="layout_marginPercent" format="string" />
+        <attr name="layout_marginLeftPercent" format="string" />
+        <attr name="layout_marginTopPercent" format="string" />
+        <attr name="layout_marginRightPercent" format="string" />
+        <attr name="layout_marginBottomPercent" format="string" />
+        <attr name="layout_marginStartPercent" format="string" />
+        <attr name="layout_marginEndPercent" format="string" />
+        <attr name="layout_textSizePercent" format="string" />
+        <attr name="layout_maxWidthPercent" format="string" />
+        <attr name="layout_maxHeightPercent" format="string" />
+        <attr name="layout_minWidthPercent" format="string" />
+        <attr name="layout_minHeightPercent" format="string" />
+        <attr name="layout_paddingPercent" format="string" />
+        <attr name="layout_paddingTopPercent" format="string" />
+        <attr name="layout_paddingBottomPercent" format="string" />
+        <attr name="layout_paddingLeftPercent" format="string" />
+        <attr name="layout_paddingRightPercent" format="string" />
+    </declare-styleable>
+
     <attr name="path_bitmap" format="string" />
     <attr name="path_plist" format="string" />
     <attr name="animation_height" format="integer" />
@@ -175,4 +180,5 @@
     <attr name="lineStroke" format="dimension" />
     <attr name="firstColumnWidth" format="dimension" />
     <attr name="outlineShow" format="boolean" />
+
 </resources>
